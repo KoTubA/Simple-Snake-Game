@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Szymon Kotarba"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra Snake</title>
+    <link rel="Stylesheet" type="text/css" href="style.css"/>
+    <link rel="Shortcut icon" href="https://cdn3.iconfinder.com/data/icons/animals-wildlife/128/snake-512.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,800" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+        </script>
+    <![endif]-->
+</head>
+<body>
+    <noscript>
+        <div id="no-scirpt-cnt">Gra Snake wymaga JavaScript do niezbędnego funkcjowania! <span>
+        Potrzebujesz pomocy, jak włączyć JavaScript? <a href="https://enable-javascript.com/" target="_blank">Przejdź tutaj.</a></span></div>
+        <div id="overlay"></div>
+    </noscript>
+    <div id="menu">
+        <div id="cnt-menu">
+            <div id="title">
+                GRA SNAKE
+            </div>
+            <div id="level">
+                <div id="easy">Łatwy</div>
+                <div id="medium">Średni</div>
+                <div id="hard">Trudny</div>
+            </div>
+        </div>
+        <div class="star star-1"></div>
+    </div>
+    <div id="game-cnt" style="display: none">
+        <div id="space">
+            <div id="label">
+                <div id="score">
+                    <div id="score-cnt">
+                        Wynik:<span class="point">0</span>
+                    </div>
+                    <div class="point-score trophy">
+                        <img src="img/trophy.png" alt="trophy"/>
+                        <span class="point-highest mar">0</span>
+                    </div>
+                </div>
+                <div id="help">
+                    <img src="img/help.png" alt="pomoc"/>
+                </div>
+                <div id="subtitle-cnt">Poruszanie się:<img src="img/key.png" alt="key"/></div>
+            </div>
+            <div id="board">
+                <canvas width="600px" height="530px">Błąd ładowania gry, prawdopodobnie twoja przeglądarka nie obłsuguje znaczników cavas, aby rozwiązać problem niezwłocznie zaktualizuj oprogramowanie swojej przeglądarki!</canvas>
+            </div>
+            <div id="result" style="z-index: -1;">
+                <div id="cnt-result">
+                    <div id="end">Twój wynik:<span class="point bt">0</span></div>
+                    <div id=cnt-img><img src="img/death.png" alt="score"/></div>
+                    <div id="score-cnt">Najlepszy wynik:<span class="point-highest mar">0</span></div>
+                    <div id="buttons">
+                        <div id="home"><img src="img/69524.png" alt="home"/></div>
+                        <div id="refresh"><img src="img/refresh_white_24dp.png" alt="refresh"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="egg"><img src="img/zZFqIjF.png" alt="mg2"/>
+        <audio id="myAudio" src="mgs.mp3" type="audio/mpeg">
+            Twoja przeglądarka nie obsługuje elementu audio.
+        </audio>
+    </div>
+    <!--<div class="load">
+		<div id="circle"></div>
+	</div>-->
+    <script src="snake.js"></script>
+    <script src="invisible.js"></script>
+</body>
+</html>
